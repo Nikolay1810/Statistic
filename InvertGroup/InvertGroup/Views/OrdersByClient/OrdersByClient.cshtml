@@ -1,0 +1,15 @@
+﻿@model IEnumerable<InvertGroup.Models.OrdersByClient.DetailOrders>
+
+@{
+    ViewBag.Title = "OrdersByClient";
+}
+
+<script src="~/Scripts/Core/scriptjava.js"></script>
+<script src="~/Scripts/OrdersByClient/OrdersByClientView.js"></script>
+
+<h2>Заказы</h2>
+
+<div id="ordersList" style="width:100%">
+    <img src="~/Image/loader.gif" id="load" style="display:none; margin: 0 auto" alt="Alternate Text" />
+</div>
+

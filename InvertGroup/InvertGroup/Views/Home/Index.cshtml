@@ -1,0 +1,53 @@
+﻿@model IEnumerable<InvertGroup.Models.Home.HomeRequest>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/Core/scriptjava.js"></script>
+<script src="~/Scripts/Home/HomeView.js"></script>
+
+
+<h2>Клиенты</h2>
+
+<p style="margin-bottom:40px;">
+    <a href="/Statistics/Statistics"><input type="button" class="btn btn-default" name="button" value="Статистика" /></a> 
+</p>
+
+<img src="~/Image/loader.gif" id="load" style="display:none; margin: 0 auto" alt="Alternate Text" />
+<table class="table" id="tableClient">
+    @*<tr>
+        <th>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalAmountByOrders)
+        </th>
+        <th></th>
+    </tr>*@
+
+@*@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalAmountByOrders)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}*@
+
+</table>
